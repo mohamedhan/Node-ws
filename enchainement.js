@@ -38,6 +38,18 @@
 // - app.js    
    1- console.log("")
 
+
+    // 3 types de modules : 
+    //     local module : 
+    //     third party module : on les installe
+    //     core module : import sans installer ( fs )
+
+    // fonction add 
+
+    // console.log(process.argv) : node app ( terminal ) / node app "hllo" 14 25 "node"
+
+
+
 // - work.js 
     console.log(module)
     // 2-  Creating module :  function add
@@ -67,6 +79,7 @@ const path=require("path")
     //file system
 const fs =require("fs")
 // =========================
+
     //create a file
     fs.writeFile("exempla.txt","this is an exmeple",err=>{
         if(err){console.log(err)}  else{
@@ -123,6 +136,11 @@ const fs =require("fs")
                 }
             })
         }
+    })
+    // read directory
+    fs.readdir("./",(err,files)=>{
+        if(err) console.log(err)
+        else console.log(files)
     })
     // Delete directory
     fs.rmdir("work",err=>{

@@ -72,7 +72,8 @@ const fs =require("fs")
     // })
 
     const serve=http.createServer((req,res)=>{
-        res.end("connected")
+        res.write("hello world")
+        res.end()
     })
     serve.listen(3000,"127.0.0.1",()=>{
         console.log("server")
