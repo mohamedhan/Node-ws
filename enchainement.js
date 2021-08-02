@@ -67,7 +67,8 @@
 
 
     // Documentation node
-// ==========================================    
+// ==========================================  
+//  __dirname / __filename / exports 
     //path
 const path=require("path")
 
