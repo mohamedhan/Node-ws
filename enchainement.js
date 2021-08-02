@@ -76,6 +76,16 @@ const path=require("path")
     console.log(path.dirname(__filename))
     console.log(path.extname(__filename))
 // ==========================================
+const os=require("os")
+// information about each cpu 
+console.log(os.cpus())
+//cpu architecture
+console.log(os.arch())
+//tatal memory in bytes
+console.log(os.totalmem())
+// free memory 
+console.log(os.freemem())
+// ==========================================
     //file system
 const fs =require("fs")
 // =========================
